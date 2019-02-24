@@ -298,7 +298,7 @@ static const NSTimeInterval COSTouchVisualizerWindowRemoveDelay = 0.2;
                 // End
                 touchView.transform = CGAffineTransformMakeScale(1.2, 0.9);
               }
-              completion:^(BOOL finished) {
+              completion:^(BOOL finished2) {
                 [UIView animateWithDuration:duration / 4
                     delay:0
                     options:0
@@ -306,7 +306,7 @@ static const NSTimeInterval COSTouchVisualizerWindowRemoveDelay = 0.2;
                       // End
                       touchView.transform = CGAffineTransformMakeScale(0.9, 0.9);
                     }
-                    completion:^(BOOL finished) {
+                    completion:^(BOOL finished3) {
                       [UIView animateWithDuration:duration / 4
                           delay:0
                           options:0
@@ -314,7 +314,7 @@ static const NSTimeInterval COSTouchVisualizerWindowRemoveDelay = 0.2;
                             // End
                             touchView.transform = CGAffineTransformMakeScale(1, 1);
                           }
-                          completion:^(BOOL finished){
+                          completion:^(BOOL finished4){
                               // If there are no touches, remove this morping touch
                               if (self.allTouches.count == 0) {
                                   [touchView removeFromSuperview];
