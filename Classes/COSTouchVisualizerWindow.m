@@ -41,8 +41,8 @@ static const NSTimeInterval COSTouchVisualizerWindowRemoveDelay = 0.2;
     if (self) {
         _morphEnabled = morphEnabled;
         _touchVisibility = touchVisibility;
-        _touchContactConfig = contactConfig ?: [[COSTouchConfig alloc] initWithTouchConfigType:COSTouchConfigTpyeContact];
-        _touchRippleConfig = rippleConfig ?: [[COSTouchConfig alloc] initWithTouchConfigType:COSTouchConfigTpyeRipple];
+        _touchContactConfig = contactConfig ?: [[COSTouchConfig alloc] initWithTouchConfigType:COSTouchConfigTypeContact];
+        _touchRippleConfig = rippleConfig ?: [[COSTouchConfig alloc] initWithTouchConfigType:COSTouchConfigTypeRipple];
     }
     return self;
 }
